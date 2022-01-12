@@ -7,6 +7,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class Rastros; }
 QT_END_NAMESPACE
 
+class Box;
 class Rastros : public QMainWindow{
     Q_OBJECT
 
@@ -16,6 +17,13 @@ public:
 
 private:
     Ui::Rastros *ui;
+    Box* m_boxes[64];
+
+private slots:
+    void play(int id);
+    void reset();
+    void showAbout();
+
 };
 
 #endif // RASTROS_H

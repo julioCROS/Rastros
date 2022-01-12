@@ -123,7 +123,7 @@
      <number>0</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
    </widget>
    <widget class="Box" name="box03">
@@ -170,7 +170,7 @@
      <number>0</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
    </widget>
    <widget class="Box" name="box02">
@@ -217,7 +217,7 @@
      <number>0</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
    </widget>
    <widget class="Box" name="box05">
@@ -264,7 +264,7 @@
      <number>0</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
    </widget>
    <widget class="Box" name="box07">
@@ -311,7 +311,7 @@
      <number>0</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
    </widget>
    <widget class="Box" name="box04">
@@ -358,7 +358,7 @@
      <number>0</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
    </widget>
    <widget class="Box" name="box06">
@@ -405,7 +405,7 @@
      <number>0</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
    </widget>
    <widget class="Box" name="box11">
@@ -449,10 +449,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
    </widget>
    <widget class="Box" name="box13">
@@ -496,10 +496,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
    </widget>
    <widget class="Box" name="box15">
@@ -543,10 +543,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
    </widget>
    <widget class="Box" name="box10">
@@ -590,7 +590,7 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="col" stdset="0">
      <number>0</number>
@@ -637,10 +637,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
    </widget>
    <widget class="Box" name="box17">
@@ -684,10 +684,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
    </widget>
    <widget class="Box" name="box14">
@@ -731,10 +731,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
    </widget>
    <widget class="Box" name="box16">
@@ -778,10 +778,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
    </widget>
    <widget class="Box" name="box21">
@@ -825,10 +825,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
    </widget>
    <widget class="Box" name="box31">
@@ -872,10 +872,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
    </widget>
    <widget class="Box" name="box33">
@@ -919,10 +919,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
    </widget>
    <widget class="Box" name="box35">
@@ -966,10 +966,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
    </widget>
    <widget class="Box" name="box20">
@@ -1013,7 +1013,7 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="col" stdset="0">
      <number>0</number>
@@ -1060,10 +1060,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
    </widget>
    <widget class="Box" name="box27">
@@ -1107,10 +1107,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
    </widget>
    <widget class="Box" name="box26">
@@ -1154,10 +1154,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
    </widget>
    <widget class="Box" name="box30">
@@ -1201,7 +1201,7 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
     <property name="col" stdset="0">
      <number>0</number>
@@ -1248,10 +1248,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
    </widget>
    <widget class="Box" name="box23">
@@ -1295,10 +1295,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
    </widget>
    <widget class="Box" name="box25">
@@ -1342,10 +1342,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
    </widget>
    <widget class="Box" name="box37">
@@ -1389,10 +1389,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
    </widget>
    <widget class="Box" name="box32">
@@ -1436,10 +1436,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
    </widget>
    <widget class="Box" name="box24">
@@ -1483,10 +1483,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
    </widget>
    <widget class="Box" name="box36">
@@ -1530,10 +1530,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
    </widget>
    <widget class="Box" name="box62">
@@ -1577,10 +1577,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
    </widget>
    <widget class="Box" name="box41">
@@ -1624,10 +1624,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
    </widget>
    <widget class="Box" name="box67">
@@ -1671,10 +1671,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
    </widget>
    <widget class="Box" name="box53">
@@ -1718,10 +1718,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
    </widget>
    <widget class="Box" name="box66">
@@ -1765,10 +1765,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
    </widget>
    <widget class="Box" name="box63">
@@ -1812,10 +1812,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
    </widget>
    <widget class="Box" name="box70">
@@ -1859,7 +1859,7 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
     <property name="col" stdset="0">
      <number>0</number>
@@ -1906,7 +1906,7 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
     <property name="col" stdset="0">
      <number>0</number>
@@ -1953,10 +1953,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
    </widget>
    <widget class="Box" name="box47">
@@ -2000,7 +2000,7 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>47</number>
     </property>
     <property name="col" stdset="0">
      <number>0</number>
@@ -2047,10 +2047,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
    </widget>
    <widget class="Box" name="box43">
@@ -2094,10 +2094,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
    </widget>
    <widget class="Box" name="box45">
@@ -2141,10 +2141,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
    </widget>
    <widget class="Box" name="box75">
@@ -2188,10 +2188,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
    </widget>
    <widget class="Box" name="box52">
@@ -2235,10 +2235,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
    </widget>
    <widget class="Box" name="box71">
@@ -2282,10 +2282,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
    </widget>
    <widget class="Box" name="box73">
@@ -2329,10 +2329,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>3</number>
     </property>
    </widget>
    <widget class="Box" name="box76">
@@ -2376,10 +2376,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
    </widget>
    <widget class="Box" name="box51">
@@ -2423,10 +2423,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
    </widget>
    <widget class="Box" name="box74">
@@ -2470,10 +2470,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
    </widget>
    <widget class="Box" name="box60">
@@ -2517,7 +2517,7 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
     <property name="col" stdset="0">
      <number>0</number>
@@ -2564,10 +2564,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
    </widget>
    <widget class="Box" name="box61">
@@ -2611,10 +2611,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>1</number>
     </property>
    </widget>
    <widget class="Box" name="box65">
@@ -2658,10 +2658,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
    </widget>
    <widget class="Box" name="box72">
@@ -2705,10 +2705,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>2</number>
     </property>
    </widget>
    <widget class="Box" name="box50">
@@ -2752,7 +2752,7 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
     <property name="col" stdset="0">
      <number>0</number>
@@ -2799,10 +2799,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
    </widget>
    <widget class="Box" name="box64">
@@ -2846,10 +2846,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
    </widget>
    <widget class="Box" name="box57">
@@ -2893,10 +2893,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
    </widget>
    <widget class="Box" name="box56">
@@ -2940,10 +2940,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>5</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>6</number>
     </property>
    </widget>
    <widget class="Box" name="box44">
@@ -2987,10 +2987,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>4</number>
     </property>
    </widget>
    <widget class="Box" name="box77">
@@ -3034,10 +3034,10 @@
      <bool>true</bool>
     </property>
     <property name="row" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
     <property name="col" stdset="0">
-     <number>0</number>
+     <number>7</number>
     </property>
    </widget>
   </widget>
