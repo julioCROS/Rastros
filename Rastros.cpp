@@ -62,6 +62,6 @@ void Rastros::reset(){
 }
 
 void Rastros::showAbout(){
-    QMessageBox::information(this, tr("Sobre"), tr("Rastros feito por: \n\n - Julio Cesar Rocha: julio.1009@hotmail.com \n\n - Thalles Verçosa: thalles_augusto2011@hotmail.com"));
+    QMessageBox::information(this, tr("Sobre"), tr("Rastros feito por: \n\n - Julio Cesar Rocha: julio.1009@hotmail.com \n\n - Thalles Augusto Soares Verçosa: thalles_augusto2011@hotmail.com"));
 }
 
