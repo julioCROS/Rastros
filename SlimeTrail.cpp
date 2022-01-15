@@ -6,6 +6,9 @@
 #include <QActionGroup>
 #include <QSignalMapper>
 
+bool firstRound = true;
+int curr_id = 0;
+
 SlimeTrail::Player otherPlayer(SlimeTrail::Player player) {
     return (player == SlimeTrail::RedPlayer ?
                     SlimeTrail::BluePlayer : SlimeTrail::RedPlayer);
@@ -14,7 +17,7 @@ SlimeTrail::Player otherPlayer(SlimeTrail::Player player) {
 SlimeTrail::SlimeTrail(QWidget *parent)
     : QMainWindow(parent),
       ui(new Ui::SlimeTrail),
-      m_player(SlimeTrail::RedPlayer) {
+      m_player(SlimeTrail::RedPlayer){
 
     ui->setupUi(this);
 
@@ -37,11 +40,13 @@ SlimeTrail::SlimeTrail(QWidget *parent)
             QObject::connect(hole, SIGNAL(clicked(bool)), map, SLOT(map()));
         }
     }
+
 #if QT_VERSION < QT_VERSION_CHECK(6,0,0)
     QObject::connect(map, SIGNAL(mapped(int)), this, SLOT(play(int)));
 #else
     QObject::connect(map, SIGNAL(mappedInt(int)), this, SLOT(play(int)));
 #endif
+
 
     // When the turn ends, switch the player.
     QObject::connect(this, SIGNAL(turnEnded()), this, SLOT(switchPlayer()));
@@ -56,11 +61,30 @@ SlimeTrail::~SlimeTrail() {
     delete ui;
 }
 
-void SlimeTrail::play(int id) {
-    Hole* hole = m_board[id / 8][id % 8];
-    qDebug() << "clicked on: " << hole->objectName();
+bool testHole(int id, int curr_id){
+    if(id != curr_id - 9 && id != curr_id - 8 && id != curr_id - 7
+              && id != curr_id - 1 && id != curr_id + 1 && id != curr_id + 7
+              && id != curr_id + 8 && id != curr_id + 9){
+        return false;
+    }
+    return true;
+}
 
-    hole->setState(Hole::BlackState);
+void SlimeTrail::play(int id) {
+
+    if(firstRound == true){
+        curr_id = 28;
+        firstRound = false;
+    }
+
+    Hole* curr_hole = m_board[curr_id / 8][curr_id % 8];
+    Hole* hole = m_board[id / 8][id % 8];
+
+    if(hole->state() != Hole::BlackState && testHole(id, curr_id) == true){
+        curr_hole->setState(Hole::BlackState);
+        hole->setState(Hole::WhiteState);
+        curr_id = id;
+    }
     emit turnEnded();
 }
 
@@ -86,6 +110,7 @@ void SlimeTrail::reset() {
 
     // Mark the starting position.
     m_board[3][4]->setState(Hole::WhiteState);
+    firstRound = true;
 
     // Reset the player.
     m_player = SlimeTrail::RedPlayer;
