@@ -33,7 +33,8 @@ private:
     Hole* m_board[8][8];
 
 private slots:
-    void play(int id);
+    int play(int id);
+    int testHole(int id, int curr_id);
     void switchPlayer();
     void reset();
 
