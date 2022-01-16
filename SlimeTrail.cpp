@@ -71,9 +71,11 @@ int SlimeTrail::testHole(int id, int curr_id){
     int colTests [8] = {-1, 0, 1, -1, 1, -1, 0, 1};
     int rowTests [8] = {-1, -1, -1, 0, 0, 1, 1, 1};
 
-
+    // Teste para saber se a peça branca está cercada
+    // por peças pretas
     for(int i = 0; i < 9; i++){
-        if((curr_id / 8) + rowTests[i] >= 8  || (curr_id % 8) + colTests[i] >= 8){
+        if((curr_id / 8) + rowTests[i] >= 8  || (curr_id % 8) + colTests[i] >= 8
+           || (curr_id / 8) + rowTests[i] < 0 || (curr_id % 8) + colTests[i] < 0){
             continue;
         }else {
             testStates++;
@@ -84,16 +86,33 @@ int SlimeTrail::testHole(int id, int curr_id){
         }
     }
 
+    // Se a peça branca estiver cercada de peças pretas
+    // então o jogo é finalizado com um EMPATE
     if(blackStates == testStates){
         return -1;
     }
 
+    // Teste para validar se o jogador selecionou ou não
+    // uma posição valida para a peça branca
+    // 0 -> Posição invalida
+    // 1 -> Posição valida
     if(id != curr_id - 9 && id != curr_id - 8 && id != curr_id - 7
               && id != curr_id - 1 && id != curr_id + 1 && id != curr_id + 7
               && id != curr_id + 8 && id != curr_id + 9){
         return 0;
     }
 
+    // Se a peça branca chegar na posição do jogador azul
+    // então o jogo é finalizado com VITORIA do jogador vermelho
+    if(id == 7){
+        return 2;
+    }
+
+    // Se a peça branca chegar na posição do jogador vermelho
+    // então o jogo é finalizado com VITORIA do jogador azul
+    if(id == 56){
+        return 3;
+    }
     return 1;
 }
 
@@ -104,6 +123,8 @@ int SlimeTrail::play(int id) {
         firstTurn = false;
     }
 
+    qDebug() << "ID: " << id;
+
     Hole* curr_hole = m_board[curr_id / 8][curr_id % 8];
     Hole* hole = m_board[id / 8][id % 8];
 
@@ -111,12 +132,24 @@ int SlimeTrail::play(int id) {
         qDebug() << "Emitir EMPATE aqui";
     }
 
+    if(testHole(id, curr_id) == 2 ||  testHole(id, curr_id) == 3){
+        curr_hole->setState(Hole::BlackState);
+        hole->setState(Hole::WhiteState);
+
+        if(testHole(id, curr_id) == 2){
+        qDebug() << "Emitir VITORIA AZUL aqui";
+        } else if(testHole(id, curr_id) == 3){
+            qDebug() << "Emitir VITORIA VERMELHA aqui";
+        }
+    }
+
     if(hole->state() != Hole::BlackState && testHole(id, curr_id) == 1){
         curr_hole->setState(Hole::BlackState);
         hole->setState(Hole::WhiteState);
         curr_id = id;
+    } else {
+        emit turnEnded();
     }
-
     emit turnEnded();
 }
 
@@ -152,7 +185,7 @@ void SlimeTrail::reset() {
 }
 
 void SlimeTrail::showAbout() {
-    QMessageBox::information(this, tr("Sobre"), tr("Rastros feito por: \n\n - Julio Cesar Rocha: julio.1009@hotmail.com \n\n - Thalles Augusto Soares Verçosa: thalles_augusto2011@hotmail.com"));
+    QMessageBox::information(this, tr("Sobre"), tr("SlimeTrail feito por: \n\n - Julio Cesar Rocha: julio.1009@hotmail.com \n\n - Thalles Augusto Soares Verçosa: thalles_augusto2011@hotmail.com"));
 }
 
 void SlimeTrail::updateStatusBar() {
