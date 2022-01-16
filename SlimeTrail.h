@@ -31,6 +31,7 @@ private:
     Ui::SlimeTrail *ui;
     Player m_player;
     Hole* m_board[8][8];
+    bool isGameOver(Hole* hole);
 
 private slots:
     int play(int id);
@@ -39,6 +40,7 @@ private slots:
     void reset();
 
     void showAbout();
+    void showGameOver(SlimeTrail::Player player);
     void updateStatusBar();
 
 };

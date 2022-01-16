@@ -24,6 +24,8 @@ SlimeTrail::SlimeTrail(QWidget *parent)
     QObject::connect(ui->actionNew, SIGNAL(triggered(bool)), this, SLOT(reset()));
     QObject::connect(ui->actionQuit, SIGNAL(triggered(bool)), qApp, SLOT(quit()));
     QObject::connect(ui->actionAbout, SIGNAL(triggered(bool)), this, SLOT(showAbout()));
+    QObject::connect(this, SIGNAL(gameOver(Player)), this, SLOT(showGameOver(Player)));
+    QObject::connect(this, SIGNAL(gameOver(Player)), this, SLOT(reset()));
 
     QSignalMapper* map = new QSignalMapper(this);
     for (int row = 0; row < 8; ++row) {
@@ -153,6 +155,19 @@ void SlimeTrail::reset() {
 
 void SlimeTrail::showAbout() {
     QMessageBox::information(this, tr("Sobre"), tr("Rastros feito por: \n\n - Julio Cesar Rocha: julio.1009@hotmail.com \n\n - Thalles Augusto Soares Verçosa: thalles_augusto2011@hotmail.com"));
+}
+
+void SlimeTrail::showGameOver(Player player) {
+    switch (player) {
+        case SlimeTrail::RedPlayer:
+            QMessageBox::information(this, tr("Vencedor"), tr("Parabéns, o jogador vermelho venceu."));
+            break;
+        case SlimeTrail::BluePlayer:
+            QMessageBox::information(this, tr("Vencedor"), tr("Parabéns, o jogador azul venceu."));
+            break;
+        default:
+            Q_UNREACHABLE();
+    }
 }
 
 void SlimeTrail::updateStatusBar() {
