@@ -17,7 +17,8 @@ class SlimeTrail : public QMainWindow {
 public:
     enum Player {
         RedPlayer,
-        BluePlayer
+        BluePlayer,
+        DrawPlayer
     };
     Q_ENUM(Player)
 
@@ -26,12 +27,12 @@ public:
 
 signals:
     void turnEnded();
+    void gameOver(Player player);
 
 private:
     Ui::SlimeTrail *ui;
     Player m_player;
     Hole* m_board[8][8];
-    bool isGameOver(Hole* hole);
 
 private slots:
     int play(int id);
@@ -40,7 +41,7 @@ private slots:
     void reset();
 
     void showAbout();
-    void showGameOver(SlimeTrail::Player player);
+    void showGameOver(Player player);
     void updateStatusBar();
 
 };

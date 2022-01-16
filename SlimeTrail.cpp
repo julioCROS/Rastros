@@ -105,13 +105,13 @@ int SlimeTrail::testHole(int id, int curr_id){
     }
 
     // Se a peça branca chegar na posição do jogador azul
-    // então o jogo é finalizado com VITORIA do jogador vermelho
+    // então o jogo é finalizado com VITORIA do jogador azul
     if(id == 7){
         return 2;
     }
 
     // Se a peça branca chegar na posição do jogador vermelho
-    // então o jogo é finalizado com VITORIA do jogador azul
+    // então o jogo é finalizado com VITORIA do jogador vermelho
     if(id == 56){
         return 3;
     }
@@ -125,13 +125,12 @@ int SlimeTrail::play(int id) {
         firstTurn = false;
     }
 
-    qDebug() << "ID: " << id;
-
     Hole* curr_hole = m_board[curr_id / 8][curr_id % 8];
     Hole* hole = m_board[id / 8][id % 8];
 
     if(testHole(id, curr_id) == -1){
-        qDebug() << "Emitir EMPATE aqui";
+        emit gameOver(SlimeTrail::DrawPlayer);
+        return 0;
     }
 
     if(testHole(id, curr_id) == 2 ||  testHole(id, curr_id) == 3){
@@ -139,9 +138,11 @@ int SlimeTrail::play(int id) {
         hole->setState(Hole::WhiteState);
 
         if(testHole(id, curr_id) == 2){
-        qDebug() << "Emitir VITORIA AZUL aqui";
+            emit gameOver(SlimeTrail::BluePlayer);
+            return 0;
         } else if(testHole(id, curr_id) == 3){
-            qDebug() << "Emitir VITORIA VERMELHA aqui";
+            emit gameOver(SlimeTrail::RedPlayer);
+            return 0;
         }
     }
 
@@ -153,6 +154,7 @@ int SlimeTrail::play(int id) {
         emit turnEnded();
     }
     emit turnEnded();
+    return 0;
 }
 
 void SlimeTrail::switchPlayer() {
@@ -170,8 +172,8 @@ void SlimeTrail::reset() {
             Hole* hole = m_board[row][col];
             hole->reset();
 
-            // FIXME: Only neighboor holes should be marked.
-            hole->setMarked(true);
+            //hole->setMarked(true);
+            hole->setState(Hole::EmptyState);
         }
     }
 
@@ -197,6 +199,9 @@ void SlimeTrail::showGameOver(Player player) {
             break;
         case SlimeTrail::BluePlayer:
             QMessageBox::information(this, tr("Vencedor"), tr("Parabéns, o jogador azul venceu."));
+            break;
+        case SlimeTrail::DrawPlayer:
+            QMessageBox::information(this, tr("Empate"), tr("Nenhum dos jogadores venceu."));
             break;
         default:
             Q_UNREACHABLE();
