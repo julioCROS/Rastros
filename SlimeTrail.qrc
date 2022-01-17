@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="black">images/black.png</file>
+        <file alias="grid">images/grid.png</file>
+        <file alias="white">images/white.png</file>
+        <file alias="icon">images/icon.png</file>
+    </qresource>
+</RCC>
