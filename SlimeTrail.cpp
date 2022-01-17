@@ -189,7 +189,7 @@ void SlimeTrail::reset() {
 }
 
 void SlimeTrail::showAbout() {
-    QMessageBox::information(this, tr("Sobre"), tr("SlimeTrail feito por: \n\n - Julio Cesar Rocha: julio.1009@hotmail.com \n\n - Thalles Augusto Soares Verçosa: thalles_augusto2011@hotmail.com"));
+    QMessageBox::information(this, tr("Sobre"), tr("Rastros feito por: \n\n - Julio Cesar Rocha: julio.1009@hotmail.com \n\n - Thalles Augusto Soares Verçosa: thalles_augusto2011@hotmail.com"));
 }
 
 void SlimeTrail::showGameOver(Player player) {
